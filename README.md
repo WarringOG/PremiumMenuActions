@@ -16,3 +16,5 @@ These are the actions that occur inside the PremiumMenus plugin.
 [play_sound] (sound) - Plays a sound
 
 [open_parent] - opens the parent menu, if there is a parent menu, it automatically opens on close of the current menu
+
+[status_item] (item) - Pulls a status item from the config.yml
