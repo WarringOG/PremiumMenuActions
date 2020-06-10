@@ -25,11 +25,27 @@ These are the actions that occur inside the PremiumMenus plugin.
 # PremiumMenuConditions
 This is how to setup conditional values for the conditional check.
 
+
+JavaScript conditions:
 ```
         Items:
           '1':
             Priority: 1
             Condition: '%player_name%.equalsIgnoreCase("Warring")'
+            Item:
+              Material: "BOOK;0" # For 1.13 and above, use BOOK
+              Name: "&e&lCondition check"
+              Lore:
+                - "&7You are cool"
+            Actions:
+              - "[close]
+```
+Permission conditions:
+```
+        Items:
+          '1':
+            Priority: 1
+            Condition: 'permission;permission.use'
             Item:
               Material: "BOOK;0" # For 1.13 and above, use BOOK
               Name: "&e&lCondition check"
